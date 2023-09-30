@@ -1,0 +1,151 @@
+.header{
+  position: relative;
+  display: flex;
+  margin: 2rem auto;
+  justify-content: space-between;
+  max-width: 1400px;
+  flex-wrap: wrap;
+  
+}
+.header nav ul{
+display: flex;
+gap: 2rem;
+
+}
+.simbolo{
+  max-width: 500px;
+}
+.Header-links{
+  color: #FFFFFF;
+}
+.Header-button{
+color: #16161A;
+padding: 10px 20px;
+background-color: #5092D2;
+font-weight: 600;
+border-radius: 5px;
+}
+#btn-mobile {
+  display: none;
+  position: relative;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+}
+#nav {
+  display: flex;
+}
+.nav {
+  display: flex;
+}
+
+@media (max-width: 1300px) {
+  .header {
+    justify-content: space-around;
+    gap: 40px;
+    padding: 20px;
+  }
+  .header-menu a {
+    border-radius: 5px;
+    z-index: 999999;
+    color: #16161A;
+    margin: 0.125rem;
+    font-weight: bold;
+    
+  }
+  .Header-button{
+    display: none;
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #5092D2;
+  }
+  #hamburger {
+    color: #5092D2;
+    width: 20px;
+    border-top: 2px solid #5092D2;
+    display: block;
+    z-index: 9999;
+    cursor: pointer;
+    position: relative;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.4s;
+    position: relative;
+    z-index: 1;
+  }
+  #menu {
+    display: block;
+    position: absolute;
+    max-width: 100vw;
+    max-height: 100vh;
+    top: 4rem;
+    right: 5%;
+    transition: 0.4s ease-in-out;
+    visibility: hidden;
+    overflow-y: hidden;
+    z-index: 1;
+    
+    
+  }
+  #nav.active #menu {
+    max-width: 100vw;
+    max-height: 100vh;
+    width: 10rem;
+    height: 5rem;
+    visibility: visible;
+    overflow-y: auto;
+    background-color: #5092D2;
+    top: 4rem;
+    right: 5%;
+ 
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+    color: #16161A;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
+@media (max-width: 1000px) {
+.simbolo{
+  display: none;
+}
+@media (max-width: 500px){
+  .header{
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .Logo{
+    max-width: 20%;
+  }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+

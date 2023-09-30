@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Inter:wght@100;200;300;400&display=swap");
+* {
+  font-family: "Cinzel", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #5092d2;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5092d2;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #27272e;
+}
+
+body {
+  background-color: #16161a;
+  position: relative;
+}
+@media (max-width: 600px){
+  
+}
+.background {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  top: -10rem;
+  right: -1rem;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5rem auto 0 auto;
+  justify-content: space-between;
+  position: relative;
+  max-width: 1300px;
+
+  
+}
+.main article {
+  max-width: 1300px;
+  display: flex;
+}
+.textos-main {
+  margin: 6rem auto 0 auto;
+}
+.herois {
+  width: 600px;
+  align-self: flex-end;
+  align-content: flex-end;
+  align-items: end;
+  text-align: end;
+  margin-top: 3rem;
+}
+.textos-main p {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 600;
+  max-width: 40ch;
+}
+.textos-main h3 {
+  font-size: 1rem;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  max-width: 40ch;
+}
+.button-main {
+  margin: 1rem auto 0 auto;
+  padding: 10px 20px;
+  background-color: #5092d2;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 16px;
+}
+.video-main {
+  border: none;
+  margin: 10rem 0 0 0;
+}
+
+@media (max-width: 1300px){
+ .herois{
+  width: 500px;
+ }
+ .video-main{
+  display: none;
+ }
+ .background{
+  max-height: 60vh;
+ }
+ .textos-main p {
+ font-size: 3rem;
+ }
+}
+@media (max-width: 1000px){
+  .main{
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .textos-main p{
+    font-size: 2.4rem;
+    text-align: center;
+  }
+  .textos-main h3 {
+    font-size: 0.8rem;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    }
+  .herois{
+    display: none;
+  }
+  .background{
+    width: 100vw;
+  }
+}
+@media (max-width: 800px) {
+  .textos-main p{
+    font-size: 1.4rem;
+  }
+  .second-main {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .main-principal{
+    width: 400px !important;
+  }
+  .second-main div p{
+    font-size: 1.4rem !important;
+    margin-left: 1rem !important;
+  }
+   .second-main div h2{
+    margin-left: 1rem !important;
+   }
+ 
+  
+}
+
+.second-main {
+  display: flex;
+  margin: 9rem auto;
+  justify-content: center;
+  align-items: center;
+  max-width: 1400px;
+  flex-wrap: wrap;
+}
+.second-main-img {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.imgs-main {
+  width: 200px;
+  opacity: 0.4;
+}
+.imgs-main:hover {
+  opacity: 1;
+}
+.main-principal {
+  z-index: -1;
+  width: 700px;
+  margin: 0 auto;
+}
+.second-main div p {
+  margin: 0 auto 0 auto;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #fff;
+  max-width: 20ch;
+}
+.second-main div h2 {
+  font-size: 10px;
+  color: #fff;
+  max-width: 300px;
+}
+
+@media (max-width: 600px) {
+  .last-section {
+    flex-direction: column;
+    margin: 0 auto;
+
+    align-items: center;
+  }
+  .box {
+    width: 352px !important;
+  }
+  .machado {
+    height: 200px !important;
+  }
+  .box h1 {
+    font-size: 1rem;
+  }
+}
+
+.last-section {
+  max-width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 10rem auto;
+  gap: 1rem;
+}
+
+.box {
+  display: flex;
+  background-color: #27272e;
+  width: 652px;
+  height: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.last-section-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.box h1 {
+  text-align: start;
+  margin: auto 0 auto 4rem;
+  color: #fff;
+  font-size: 1.6rem;
+}
+.box h2 {
+  margin: 0 auto 0 4rem;
+  color: #fff;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+.box button {
+  margin: 0 auto 0 4rem;
+  background-color: #5092d2;
+  font-size: 1rem;
+  padding: 10px 20px;
+}
+.machado {
+  margin: auto 1rem auto auto;
+  height: 400px;
+}
+
+.js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: 0.3s;
+}
+.js-scroll.ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
